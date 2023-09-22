@@ -1,0 +1,2015 @@
+/***************** G L O B A L E S ******************/
+:root{
+    --yeni-texto: 'Ultra', serif;
+    --viveros-texto: 'Cutive Mono', monospace;
+    --texto-cuerpo: 1.3rem;
+    --titulos: 1.5rem;
+    --bold: 700;
+    --morado-claro: #8f69a8;
+    --lila: #5e2b84;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+	text-decoration:none;
+    margin: 0;
+    padding: 0;
+    font-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.contenedor-principal{
+    max-width: 27rem;
+    margin: 1rem auto;
+}
+
+
+
+p, li{
+    font-size: var(--texto-cuerpo);
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0; 
+    list-style: none;
+     
+}
+
+#logros li{
+    text-decoration: underline; 
+    list-style: circle;
+}
+
+#logros ul,
+#contacto ul{
+    margin-top: 2rem;
+}
+
+#contacto li{
+    line-height: 2.5;
+}
+
+#logros a{
+    color: var(--lila);
+}
+
+.cabezal{
+    font-weight: var(--bold);
+    font-size: var(--titulos);
+    text-transform: uppercase;
+    border-bottom: .2rem solid purple;
+    width: 23.5rem;
+    margin: 1rem auto;
+}
+
+h3{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.sub-sec{
+    font-size: 1.4rem;
+    font-weight: var(--bold);
+    padding-left: 1rem;
+}
+
+.bold{
+    font-weight: var(--bold);
+}
+
+
+
+
+#presentacion__profesion .cabezal:before,
+#objetivo-profesional .cabezal:before,
+#formacion .cabezal:before,
+#habilidades .cabezal:before,
+#capacitacion .cabezal:before,
+#logros .cabezal:before,
+#aptitudes .cabezal:before,
+#contacto .cabezal:before,
+#contacto .celular:before,
+#contacto .correo:before,
+#contacto .github:before{
+    display: inline-block;
+    margin: 0 .8rem 0 0;
+}
+
+
+/************* H E A D E R ****************/
+
+#header{
+    display: grid;
+    grid-template-rows: 230px 340px 340px;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    grid-template-areas: 
+    "nombre"
+    "foto"
+    "objetivo";
+}
+
+#presentacion{
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+    grid-area: foto;
+}
+
+#presentacion__foto{
+    width: 15rem;
+    height: 20rem;
+}
+
+#presentacion__foto img{
+    width: 100%;
+}
+
+#presentacion__profesion .cabezal:before{
+    content: url(../imgs/birrete.png);
+    width: 2.5rem;
+    height: 1.6rem; 
+}
+
+#presentacion__profesion p{
+    width: 24rem;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+#presentacion__profesion #generacion,
+#presentacion__profesion #licenciatura{
+    line-height: 2;
+}
+
+#generacion{
+    font-size: var(--texto-cuerpo);
+    font-weight: var(--bold);
+    line-height: 1;
+    padding-bottom: .5rem;
+    margin-top: 0;
+}
+
+#imagen-grafica-nombre{
+    grid-area: nombre;
+    margin: 0 auto;
+    width: 27rem;
+    padding-top: 3rem;
+    text-align: center;
+    display: inline-block;
+    grid-row: 1/2;
+}
+
+#imagen-grafica-nombre p{
+    width: 27rem;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+#yeni{
+    line-height: 1;
+    font-family: var(--yeni-texto);
+    font-size: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+    color: var(--lila);
+    border-bottom: solid .7rem var(--morado-claro);
+}
+
+#viveros{
+    line-height: 1;
+    font-family: var(--viveros-texto);
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    color: var(--lila);
+    border-bottom: solid .7rem var(--morado-claro);
+}
+
+#diseño-wm{
+    text-align: center;
+    line-height: 2.3;
+    font-family: var(--texto-cuerpo);
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+    font-weight: bold;
+}
+
+#objetivo-profesional{
+    grid-area: objetivo;
+}
+
+#objetivo-profesional .cabezal:before{
+    content: url(../imgs/objetivo.png);
+    width: 2.2rem;
+    height: 2.3rem;
+}
+
+#objetivo-profesional{
+    display: inherit;
+    justify-items: center;
+}
+
+#objetivo-profesional .cabezal{
+    width: 22rem;
+}
+
+
+/********************** SECTION **********************/
+
+#section-main{
+    display: grid;
+    grid-template-rows: 171rem 170rem;
+    row-gap: 3rem;
+}
+
+
+section{
+    margin: 2rem auto;
+}
+
+#habilidades .cabezal{
+    width: 13.8rem;
+}
+
+#habilidades .cabezal:before{
+    content: url(../imgs/engranes.png);
+    width: 2.3rem;
+    height: 1.7rem;
+}
+
+
+/*** CIRCULOS PROGRESIÓN ***/
+
+.contenedor-circulos{
+    justify-items: center;
+    margin: 1.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+    padding-bottom: 1rem;
+}
+
+.programacion{
+    border-color: var(--lila);
+    margin: 10% auto 0;
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+    box-shadow: none;
+}
+
+.programacion:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1.2rem var(--morado-claro);
+    width: 100%;
+    height: 100%;
+    animation: border 15ms ease-in 1;
+    -webkit-animation: border 15ms ease-in 1;
+    -moz-animation: border 15ms ease-in 1;
+    -o-animation: border 15ms ease-in 1;
+    top: 0;
+    left: 0;
+}
+
+.programacion > div{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+}
+
+.programacion .progress-left{
+    left: 0;
+}
+
+.progress-bar1,
+.progress-bar1-,
+.progress-bar2,
+.progress-bar2-,
+.progress-bar4,
+.progress-bar3,
+.progress-bar5,
+.progress-bar6,
+.progress-bar7,
+.progress-bar8,
+.progress-bar9{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 1.2rem;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    border-color: var(--lila);
+}
+
+.programacion p{
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 3.5rem;
+}
+
+
+/**** BARRAS ****/
+
+.barra{
+    width: 21rem;
+    margin: 2rem auto;
+}
+
+.barra div{
+    margin: .5rem .1rem;
+}
+
+.relleno{
+    border: solid .2rem var(--lila);
+    padding: 0;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.relleno p{
+    font-size: 1.1rem;
+}
+
+.barra1,
+.barra2,
+.barra3,
+.barra4,
+.barra5,
+.barra6,
+.barra7,
+.barra8,
+.barra9,
+.barra10{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    margin: 0;
+    padding: .5rem 1rem;
+    color: var(--lila);
+}
+
+
+/*** SISTEMAS OPERATIVOS ***/
+
+#operativos{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem;
+}
+
+
+/*** APTITUDES ***/
+
+#aptitudes .cabezal{
+    width: 12rem;
+    margin-top: 3rem;
+}
+
+#aptitudes .cabezal:before{
+    content: url(../imgs/nube.png);
+    width: 2.4rem;
+    height: 2.1rem;
+}
+
+/*** LOGROS ***/
+
+#logros .cabezal{
+    width: 24rem;
+    margin-top: 3rem;
+}
+
+#logros h2:before{
+    content: url(../imgs/trofeo.png);
+    width: 2.1rem;
+    height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--negro);
+    display: block;
+}
+
+
+
+
+/*** CONTACTO ***/
+
+#contacto{
+    margin-top: 4rem;
+}
+
+#contacto .cabezal{
+    width: 12rem;
+    margin-top: 3rem;
+}
+
+#contacto .cabezal:before{
+    content: url(../imgs/agenda.png);
+    width: 2.1rem;
+    height: 1.9rem;
+}
+
+#contacto .github:before{
+    content: url(../imgs/git.png);
+    width: 2rem;
+    height: 2rem;
+}
+
+#contacto .correo:before{
+    content: url(../imgs/correo.png);
+    width: 1.7rem;
+    height: 1.6rem;
+}
+
+#contacto .celular:before{
+    content: url(../imgs/celular.png);
+    width: 1.2rem;
+    height: 2.1rem;
+}
+
+
+
+
+#contacto li{
+    text-align: start;
+}
+
+.correo{
+    margin-left: .1rem;
+}
+
+.celular{
+    margin-left: .3rem;
+}
+
+/********************* MAIN ****************************/
+
+/*** EXPERIENCIA LABORAL ***/
+
+main{
+    padding: .5rem;
+    grid-row: 1/2;
+    width: 26.5rem;
+}
+
+#formacion .cabezal,
+#capacitacion .cabezal{
+    width: 21rem;
+}
+
+#formacion .cabezal:before{
+    content: url(../imgs/maletin.png);
+    width: 2.1rem;
+    height: 1.8rem;
+}
+
+#formacion .sub-sec{
+    padding-top: 1rem;
+}
+
+
+/*** CAPACITACION ***/
+
+#capacitacion{
+    margin-top: 3rem;
+}
+
+#capacitacion .cabezal{
+    width: 23rem;
+}
+
+#capacitacion .cabezal:before{
+    content: url(../imgs/birrete2.png);
+    width: 2.5rem;
+    height: 1.8rem;
+}
+
+
+#contenedor-cursos{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: 32rem 6rem 8rem 6rem 8rem 6rem;
+    row-gap: 2rem;
+}
+
+#año22,
+#año20-22,
+#año20,
+#año18,
+#año17-18,
+#año16{
+    display: inherit;
+    grid-template-columns: 5rem 19rem;
+    column-gap: 1.5rem;
+}
+
+#año22 #fecha6,
+#año20-22 #fecha5,
+#año20 #fecha4,
+#año18 #fecha3,
+#año17-18 #fecha2,
+#año16 #fecha1{
+    text-align: end;
+    font-weight: var(--bold);
+    border-right: solid .3rem var(--morado-claro);
+    padding-right: 1rem;
+}
+
+
+.rango-fecha p{
+    padding-right: 1rem;
+    text-align: end;
+    font-weight: var(--bold);
+}
+
+
+#curso-diez .name,
+#curso-nueve .name,
+#curso-ocho .name,
+#curso-siete .name{
+    padding-bottom: 2rem;
+}
+
+.name:before{
+    content: url(../imgs/flecha.png);
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin: 0 .8rem 0 0;
+}
+
+
+
+/***************************** F O O T E R ***************************/
+
+.pie-pagina{
+    line-height: 1.5;
+    margin: 4rem auto 1rem;
+    border-top: solid .1rem var(--morado-claro);
+    max-width: 28rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: var(--lila);
+}
+
+
+
+
+/****************************************** R E S P O N S I V E **********************************************/
+
+@media (min-width: 540px) {
+    .contenedor-principal{
+        max-width: 53rem;  
+    }
+
+    #header{
+        grid-template-rows: 230px 220px 230px;
+        justify-content: center;
+    }
+
+    #presentacion{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        align-items: end;
+    }
+
+    #presentacion__profesion p{
+        width: 24rem;
+        text-align: start;
+    }
+
+   #objetivo-profesional .cabezal{
+        margin-left: 0;
+    }
+ 
+
+    #imagen-grafica-nombre{
+        width: 39rem;
+        margin: 0 auto;
+    }
+
+    #imagen-grafica-nombre p{
+        text-align: center;
+        width: 39rem;
+    }
+
+    #yeni{
+        letter-spacing: 5rem;
+    }
+    
+    #viveros{
+        letter-spacing: 2.9rem;
+    }
+    
+    #diseño-wm{
+        font-size: 2.2rem;
+        letter-spacing: .4rem;
+        word-spacing: .2rem;
+    }
+
+    #section-main{
+        grid-template-rows: 123rem 135rem;
+        row-gap: 3rem;
+    }
+
+
+    main{
+        width: 53rem;
+    }
+
+    #contenedor-cursos{
+        margin-top: 4rem;
+        grid-template-rows: 23rem 3rem 3.5rem 4rem 5rem 5rem;
+        row-gap: 3rem;
+    }
+
+    #año22,
+    #año20-22,
+    #año20,
+    #año18,
+    #año17-18,
+    #año16{
+        grid-template-columns: 10rem 40rem;
+    }
+
+    .contenedor-circulos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .barra{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 42rem;
+        column-gap: 3rem;
+    }
+
+    #operativos,
+    #aptitudes,
+    #logros,
+    #contacto{
+        margin: 0 auto;
+        width: 30rem;
+        text-align: center;
+    }
+
+    #aptitudes p,
+    #logros li,
+    #contacto li{
+        text-align: center;
+    }
+
+    #logros li{
+        list-style: none;
+        line-height: 2;
+    }
+
+    .pie-pagina{
+        max-width: 54rem;
+        
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .contenedor-principal{
+        max-width: 76rem;  
+    }
+
+    #header{
+        grid-template-rows: 20rem 18rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "foto nombre"
+        "objetivo objetivo";
+        align-items: center;
+    }
+
+    #imagen-grafica-nombre{
+        width: 25rem;
+        margin-right: 0rem;
+        grid-area: nombre;
+        padding-right: 1rem;
+    }
+
+    #imagen-grafica-nombre p{
+        text-align: center;
+        width: 24rem;
+    }
+
+    #yeni{
+        font-size: 5rem;
+        letter-spacing: 3.2rem;
+    }
+    
+    #viveros{
+        font-size: 4rem;
+        letter-spacing: 1.2rem;
+    }
+    
+    #diseño-wm{
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        word-spacing: .3rem;
+    }
+
+    #presentacion{
+        margin-left: 0;
+        padding-left: 1rem;
+        grid-area: foto;
+    }
+
+    #presentacion__foto{
+        width: 11rem;
+        height: 16rem;
+    }
+
+    #presentacion__profesion{
+        padding-top: 3rem;
+    }
+
+    #presentacion__profesion .cabezal{
+        width: 23rem;
+    }
+    #presentacion__profesion p{
+        width: 23rem;
+        text-align: justify;
+        
+    }
+
+    #objetivo-profesional{
+        grid-area: objetivo;
+        padding: 0 1.5rem;
+    }
+    
+    #section-main{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    section{
+        margin-top: 0;
+    }
+
+
+    main{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        width: 40rem;
+    }
+
+    #capacitacion{
+        margin: 3rem auto;
+    }
+
+    #contenedor-cursos{
+        margin: 4rem 0;
+        grid-template-rows: 27rem 5rem 6rem 5rem 7rem 4rem;
+        row-gap: 1rem;
+        
+    }
+
+    #año22,
+    #año20-22,
+    #año20,
+    #año18,
+    #año17-18,
+    #año16{
+        grid-template-columns: 10rem 26rem;
+    }
+
+    #section{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+
+    .contenedor-circulos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .barra{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        width: 30rem;
+        margin: 2rem 0;
+    }
+
+    .pie-pagina{
+        max-width: 76rem;
+        
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .cabezal{
+        font-size: 1.8rem;
+    }
+    
+    .sub-sec{
+        font-size: 1.7rem;
+    }
+
+    p, li{
+        font-size: 1.6rem;
+    }
+    
+    .contenedor-principal{
+        max-width: 110rem;  
+    }
+
+    #header{
+        align-items: flex-end;
+    }
+
+    #presentacion{
+        column-gap: 2rem;
+    }
+
+    #imagen-grafica-nombre{
+        width: 28rem;
+        margin-right: 0rem;
+        padding-right: 1rem;
+    }
+
+    #imagen-grafica-nombre p,h1{
+        text-align: center;
+        width: 28.5rem;
+    }
+
+    #yeni{
+        font-size: 6.3rem;
+    }
+    
+    #viveros{
+        font-size: 5rem;
+    }
+    
+    #diseño-wm{
+        font-size: 1.9rem;
+        letter-spacing: .1rem;
+        word-spacing: .2rem;
+        margin-bottom: 0;
+    }
+
+    #presentacion{
+        margin-left: 0;
+        padding-left: 1rem;
+        grid-area: foto;
+    }
+
+    #presentacion__foto{
+        width: 14rem;
+        height: 19rem;
+    }
+
+    #presentacion__profesion{
+        padding-top: 3rem;
+    }
+
+    #presentacion__profesion .cabezal{
+        width: 27.5rem;
+    }
+
+    #objetivo-profesional .cabezal{
+        width: 25rem;
+    }
+
+    #section-main{
+        column-gap: 4rem;
+    }
+
+    #habilidades .cabezal{
+        width: 15.5rem;
+    }
+
+    #aptitudes .cabezal{
+        width: 13.8rem;
+       
+    }
+
+    #logros .cabezal{
+        width: 28.5rem;
+    }
+
+    #contacto .cabezal{
+        width: 14.5rem;
+    }
+
+    main{
+        width: 70rem;
+    }
+
+    #formacion .cabezal{
+        width: 24rem;
+    }
+
+    #capacitacion .cabezal{
+        width: 26rem;
+    }
+
+    #contenedor-cursos{
+        width: 50rem;
+        margin: 5rem auto;
+        grid-template-rows: 25rem 3rem 5rem 5rem 7rem 5rem;
+    }
+
+    #año22,
+    #año20-22,
+    #año20,
+    #año18,
+    #año17-18,
+    #año16{
+        grid-template-columns: 12rem 38rem;
+    }
+
+
+    .barra{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        width: 30rem;
+        margin: 2rem 0;
+    }
+
+    .pie-pagina{
+        max-width: 120rem;
+        
+    }
+}
+
+
+
+
+/************** ANIMACION BARRAS *************/
+
+.barra-one {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 90%;
+    animation: progress1 2s ease-out;
+    -webkit-animation: progress1 2s ease-out;
+    -moz-animation: progress1 2s ease-out;
+    -o-animation: progress1 2s ease-out;
+}
+@keyframes progress1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes progress1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes progress1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@-o-keyframes progress1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+.barra-two {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 85%;
+    animation: progress2 2.3s ease-out;
+    -webkit-animation: progress2 2.3s ease-out;
+    -moz-animation: progress2 2.3s ease-out;
+    -o-animation: progress2 2.3s ease-out;
+}
+@keyframes progress2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes progress2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+@-moz-keyframes progress2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+@-o-keyframes progress2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+
+.barra-three {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 70%;
+    animation: progress3 1.5s ease-out;
+    -webkit-animation: progress3 1.5s ease-out;
+    -moz-animation: progress3 1.5s ease-out;
+    -o-animation: progress3 1.5s ease-out;
+}
+@keyframes progress3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes progress3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-moz-keyframes progress3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-o-keyframes progress3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+
+.barra-four {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 70%;
+    animation: progress4 1.8s ease-out;
+    -webkit-animation: progress4 1.8s ease-out;
+    -moz-animation: progress4 1.8s ease-out;
+    -o-animation: progress4 1.8s ease-out;
+}
+@keyframes progress4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes progress4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-moz-keyframes progress4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-o-keyframes progress4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+
+.barra-five {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 50%;
+    animation: progress5 1s ease-out;
+    -webkit-animation: progress5 1s ease-out;
+    -moz-animation: progress5 1s ease-out;
+    -o-animation: progress5 1s ease-out;
+}
+@keyframes progress5 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes progress5 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-moz-keyframes progress5 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-o-keyframes progress5 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.barra-six {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 70%;
+    animation: progress6 1.5s ease-out;
+    -webkit-animation: progress6 1.5s ease-out;
+    -moz-animation: progress6 1.5s ease-out;
+    -o-animation: progress6 1.5s ease-out;
+}
+@keyframes progress6 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes progress6 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-moz-keyframes progress6 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-o-keyframes progress6 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+
+.barra-seven {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 60%;
+    animation: progress7 1s ease-out;
+    -webkit-animation: progress7 1s ease-out;
+    -moz-animation: progress7 1s ease-out;
+    -o-animation: progress7 1s ease-out;
+}
+@keyframes progress7 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-webkit-keyframes progress7 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-moz-keyframes progress7 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-o-keyframes progress7 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+
+.barra-eight {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 70%;
+    animation: progress8 1s ease-out;
+    -webkit-animation: progress8 1s ease-out;
+    -moz-animation: progress8 1s ease-out;
+    -o-animation: progress8 1s ease-out;
+}
+@keyframes progress8 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes progress8 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-moz-keyframes progress8 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-o-keyframes progress8 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+
+.barra-nine {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 60%;
+    animation: progress9 1s ease-out;
+    -webkit-animation: progress9 1s ease-out;
+    -moz-animation: progress9 1s ease-out;
+    -o-animation: progress9 1s ease-out;
+}
+@keyframes progress9 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-webkit-keyframes progress9 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-moz-keyframes progress9 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-o-keyframes progress9 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+
+.barra-ten {
+    color: var(--blanco);
+    background-color: var(--lila);
+    width: 90%;
+    animation: progress10 .8s ease-out;
+    -webkit-animation: progress10 .8s ease-out;
+    -moz-animation: progress10 .8s ease-out;
+    -o-animation: progress10 .8s ease-out;
+}
+@keyframes progress10 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes progress10 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes progress10 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@-o-keyframes progress10 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+ /************ ANIMACION CIRCULOS **************/
+
+
+.progress-left .progress-bar1,
+.progress-left .progress-bar2,
+.progress-left .progress-bar2-,
+.progress-left .progress-bar1-,
+.progress-left .progress-bar4,
+.progress-left .progress-bar3,
+.progress-left .progress-bar5,
+.progress-left .progress-bar6{
+    left: 100%;
+    border-top-right-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    border-left: 0;
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+    -moz-transform-origin: center left;
+    -o-transform-origin: center left;
+}
+.programacion .progress-right{
+    right: 0;
+}
+
+.progress-right .progress-bar1,
+.progress-right .progress-bar2,
+.progress-right .progress-bar2-,
+.progress-right .progress-bar1-,
+.progress-right .progress-bar3,
+.progress-right .progress-bar4,
+.progress-right .progress-bar5,
+.progress-right .progress-bar6,
+.progress-right .progress-bar7,
+.progress-right .progress-bar8,
+.progress-right .progress-bar9{
+    left: -100%;
+    border-top-left-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    border-right: 0;
+    transform-origin: center right;
+    -webkit-transform-origin: center right;
+    -moz-transform-origin: center right;
+    -o-transform-origin: center right;
+    
+}
+.programacion .progress-right .one{
+    animation: loading-1 2s linear forwards;
+    -moz-animation: loading-1 2s linear forwards;
+    -webkit-animation: loading-1 2s linear forwards;
+    -o-animation: loading-1 2s linear forwards;
+}
+
+.programacion .progress-left .one-1{
+    animation: loading-1- 2s linear forwards 2s;
+    -moz-animation: loading-1- 2s linear forwards 2s;
+    -webkit-animation: loading-1- 2s linear forwards 2s;
+    -o-animation: loading-1- 2s linear forwards 2s;
+}
+
+.programacion .progress-right .two{
+    animation: loading-2 2.5s linear forwards;
+    -moz-animation: loading-2 2.5s linear forwards;
+    -webkit-animation: loading-2 2.5s linear forwards;
+    -o-animation: loading-2 2.5s linear forwards;
+}
+
+.programacion .progress-left .two-2{
+    animation: loading-2- 2.5s linear forwards 2.5s;
+    -moz-animation: loading-2- 2.5s linear forwards 2.5s;
+    -webkit-animation: loading-2- 2.5s linear forwards 2.5s;
+    -o-animation: loading-2- 2.5s linear forwards 2.5s;
+}
+
+.programacion .progress-right .three{
+    animation: loading-3 1.8s linear forwards;
+    -moz-animation: loading-3 1.8s linear forwards;
+    -webkit-animation: loading-3 1.8s linear forwards;
+    -o-animation: loading-3 1.8s linear forwards;
+}
+
+.programacion .progress-right .four{
+    animation: loading-4 1.5s linear forwards;
+    -moz-animation: loading-4 1.5s linear forwards;
+    -webkit-animation: loading-4 1.5s linear forwards;
+    -o-animation: loading-4 1.5s linear forwards;
+}
+
+.programacion .progress-right .five{    
+    animation: loading-5 1.8s linear forwards;
+    -moz-animation: loading-5 1.8s linear forwards;
+    -webkit-animation: loading-5 1.8s linear forwards;
+    -o-animation: loading-5 1.8s linear forwards;
+}
+
+.programacion .progress-right .six{
+    animation: loading-6 1.5s linear forwards;
+    -moz-animation: loading-6 1.5s linear forwards;
+    -webkit-animation: loading-6 1.5s linear forwards;
+    -o-animation: loading-6 1.5s linear forwards;
+}
+
+.programacion .progress-right .seven{
+    animation: loading-7 1.5s linear forwards;
+    -moz-animation: loading-7 1.5s linear forwards;
+    -webkit-animation: loading-7 1.5s linear forwards;
+    -o-animation: loading-7 1.5s linear forwards;
+}
+
+.programacion .progress-right .eight{
+    animation: loading-8 1.5s linear forwards;
+    -moz-animation: loading-8 1.5s linear forwards;
+    -webkit-animation: loading-8 1.5s linear forwards;
+    -o-animation: loading-8 1.5s linear forwards;
+}
+
+
+.programacion .progress-right .nine{
+    animation: loading-9 1.5s linear forwards;
+    -moz-animation: loading-9 1.5s linear forwards;
+    -webkit-animation: loading-9 1.5s linear forwards;
+    -o-animation: loading-9 1.5s linear forwards;
+}
+
+@keyframes loading-1 { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-moz-keyframes loading-1 { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-webkit-keyframes loading-1 { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-o-keyframes loading-1 { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+
+
+@keyframes loading-1- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+@-webkit-keyframes loading-1- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+@-moz-keyframes loading-1- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+@-o-keyframes loading-1- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+
+@keyframes loading-2 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-webkit-keyframes loading-2 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-moz-keyframes loading-2 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-o-keyframes loading-2 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+
+@keyframes loading-2- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+@-webkit-keyframes loading-2- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+@-moz-keyframes loading-2- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+@-o-keyframes loading-2- { /* 144deg PARA 90%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(100deg);
+    } 
+}
+
+
+@keyframes loading-3 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-webkit-keyframes loading-3 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-moz-keyframes loading-3 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-o-keyframes loading-3 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+
+@keyframes loading-4 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(160deg);
+    } 
+}
+
+@-webkit-keyframes loading-4 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(160deg);
+    } 
+}
+
+@-moz-keyframes loading-4 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(160deg);
+    } 
+}
+
+@-o-keyframes loading-4 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(160deg);
+    } 
+}
+
+
+@keyframes loading-5 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-webkit-keyframes loading-5 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-moz-keyframes loading-5 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+@-o-keyframes loading-5 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(180deg);
+    } 
+}
+
+
+@keyframes loading-6 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+@-webkit-keyframes loading-6 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+@-moz-keyframes loading-6 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+@-o-keyframes loading-6 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+
+@keyframes loading-7 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+@-webkit-keyframes loading-7 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+@-moz-keyframes loading-7 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+@-o-keyframes loading-7 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+@keyframes loading-8 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+@-webkit-keyframes loading-8 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+@-moz-keyframes loading-8 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+@-o-keyframes loading-8 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+
+
+@keyframes loading-9 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+@-webkit-keyframes loading-9 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+@-moz-keyframes loading-9 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+@-o-keyframes loading-9 { /* 180deg PARA 50%*/
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(90deg);
+    } 
+}
+
+
+
+
+
+
